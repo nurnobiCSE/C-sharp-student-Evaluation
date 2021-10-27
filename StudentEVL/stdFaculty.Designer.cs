@@ -56,6 +56,8 @@ namespace StudentEVL
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.course = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInsert)).BeginInit();
@@ -224,7 +226,7 @@ namespace StudentEVL
             // address
             // 
             this.address.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.address.Location = new System.Drawing.Point(111, 348);
+            this.address.Location = new System.Drawing.Point(111, 358);
             this.address.Name = "address";
             this.address.Size = new System.Drawing.Size(158, 34);
             this.address.TabIndex = 36;
@@ -235,7 +237,7 @@ namespace StudentEVL
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Crimson;
-            this.label8.Location = new System.Drawing.Point(18, 352);
+            this.label8.Location = new System.Drawing.Point(18, 362);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(80, 24);
             this.label8.TabIndex = 34;
@@ -254,7 +256,7 @@ namespace StudentEVL
             "GDP",
             "ENG",
             "MAT"});
-            this.department.Location = new System.Drawing.Point(131, 287);
+            this.department.Location = new System.Drawing.Point(131, 265);
             this.department.Name = "department";
             this.department.Size = new System.Drawing.Size(138, 26);
             this.department.TabIndex = 33;
@@ -264,7 +266,7 @@ namespace StudentEVL
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Crimson;
-            this.label7.Location = new System.Drawing.Point(18, 289);
+            this.label7.Location = new System.Drawing.Point(18, 267);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(107, 24);
             this.label7.TabIndex = 32;
@@ -279,7 +281,7 @@ namespace StudentEVL
             "Male",
             "Female",
             "Others"});
-            this.gender.Location = new System.Drawing.Point(111, 245);
+            this.gender.Location = new System.Drawing.Point(111, 223);
             this.gender.Name = "gender";
             this.gender.Size = new System.Drawing.Size(158, 26);
             this.gender.TabIndex = 31;
@@ -289,7 +291,7 @@ namespace StudentEVL
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Crimson;
-            this.label6.Location = new System.Drawing.Point(18, 247);
+            this.label6.Location = new System.Drawing.Point(18, 225);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(74, 24);
             this.label6.TabIndex = 30;
@@ -298,7 +300,7 @@ namespace StudentEVL
             // lName
             // 
             this.lName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lName.Location = new System.Drawing.Point(111, 205);
+            this.lName.Location = new System.Drawing.Point(111, 183);
             this.lName.Name = "lName";
             this.lName.Size = new System.Drawing.Size(158, 22);
             this.lName.TabIndex = 29;
@@ -308,7 +310,7 @@ namespace StudentEVL
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Crimson;
-            this.label5.Location = new System.Drawing.Point(18, 205);
+            this.label5.Location = new System.Drawing.Point(18, 183);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 24);
             this.label5.TabIndex = 28;
@@ -317,7 +319,7 @@ namespace StudentEVL
             // fName
             // 
             this.fName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fName.Location = new System.Drawing.Point(111, 170);
+            this.fName.Location = new System.Drawing.Point(111, 148);
             this.fName.Name = "fName";
             this.fName.Size = new System.Drawing.Size(158, 22);
             this.fName.TabIndex = 27;
@@ -327,7 +329,7 @@ namespace StudentEVL
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Crimson;
-            this.label4.Location = new System.Drawing.Point(18, 170);
+            this.label4.Location = new System.Drawing.Point(18, 148);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(96, 24);
             this.label4.TabIndex = 26;
@@ -336,7 +338,7 @@ namespace StudentEVL
             // studentID
             // 
             this.studentID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.studentID.Location = new System.Drawing.Point(111, 131);
+            this.studentID.Location = new System.Drawing.Point(111, 109);
             this.studentID.Name = "studentID";
             this.studentID.Size = new System.Drawing.Size(158, 22);
             this.studentID.TabIndex = 25;
@@ -346,7 +348,7 @@ namespace StudentEVL
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Crimson;
-            this.label3.Location = new System.Drawing.Point(18, 131);
+            this.label3.Location = new System.Drawing.Point(18, 109);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(91, 24);
             this.label3.TabIndex = 24;
@@ -377,12 +379,37 @@ namespace StudentEVL
             this.label2.Text = "X";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
+            // course
+            // 
+            this.course.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.course.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.course.FormattingEnabled = true;
+            this.course.Items.AddRange(new object[] {
+            " "});
+            this.course.Location = new System.Drawing.Point(131, 306);
+            this.course.Name = "course";
+            this.course.Size = new System.Drawing.Size(138, 26);
+            this.course.TabIndex = 50;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Crimson;
+            this.label11.Location = new System.Drawing.Point(18, 308);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(71, 24);
+            this.label11.TabIndex = 49;
+            this.label11.Text = "Course";
+            // 
             // stdFaculty
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1000, 700);
+            this.Controls.Add(this.course);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.searchBar);
@@ -454,5 +481,7 @@ namespace StudentEVL
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox course;
+        private System.Windows.Forms.Label label11;
     }
 }

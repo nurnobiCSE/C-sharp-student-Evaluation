@@ -16,6 +16,7 @@ namespace StudentEVL
         public studentForm()
         {
             InitializeComponent();
+            fillCombobox();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -35,7 +36,7 @@ namespace StudentEVL
         SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-9G2BI4L\MSSQLSERVER01;Initial Catalog=studentEVL;Integrated Security=True");
         private void save_Click(object sender, EventArgs e)
         {
-            if (studentID.Text == "" || fName.Text == "" || lName.Text == "" || address.Text == "" || gender.Text == "" || department.Text =="" ) {
+            if (studentID.Text == "" || fName.Text == "" || lName.Text == "" || address.Text == "" || gender.Text == "" || department.Text =="" || course.Text == "" ) {
                 MessageBox.Show("Please check your all any missing information");
             }
            
@@ -43,7 +44,7 @@ namespace StudentEVL
             {
                 try {
                     con.Open();
-                    string query = "insert into stdTable values('" + studentID.Text + "','" + fName.Text + "','" + lName.Text + "','" + address.Text + "','" + gender.Text + "','" + department.Text + "','NULL')";
+                    string query = "insert into stdTable values('" + studentID.Text + "','" + fName.Text + "','" + lName.Text + "','" + address.Text + "','" + gender.Text + "','" + department.Text + "','NULL','"+ course.Text +"')";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Data insert Successful!");
@@ -92,6 +93,31 @@ namespace StudentEVL
             con.Close();
         }
 
+        public void fillCombobox()
+        {
+            con.Open();
+            string show = "select courseNo from crcTable";
+            SqlCommand cmd = new SqlCommand(show , con);
+           
+            SqlDataReader rdr;
+                try
+            {
+                
+                rdr = cmd.ExecuteReader();
+                
+                while (rdr.Read())
+                {
+                    string dlist = rdr.GetString(0);
+                    course.Items.Add(dlist);
+                    
+                }
+                con.Close();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
         private void studentForm_Load(object sender, EventArgs e)
         {
             populate();

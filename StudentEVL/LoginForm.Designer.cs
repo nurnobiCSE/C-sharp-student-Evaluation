@@ -32,6 +32,7 @@ namespace StudentEVL
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.facultyLog = new StudentEVL.RoundedButton();
             this.login = new StudentEVL.RoundedButton();
             this.password = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -42,7 +43,6 @@ namespace StudentEVL
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.facultyLog = new StudentEVL.RoundedButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -83,6 +83,23 @@ namespace StudentEVL
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(383, 577);
             this.panel1.TabIndex = 2;
+            // 
+            // facultyLog
+            // 
+            this.facultyLog.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.facultyLog.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.facultyLog.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.facultyLog.FlatAppearance.BorderSize = 0;
+            this.facultyLog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.facultyLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.facultyLog.ForeColor = System.Drawing.Color.GhostWhite;
+            this.facultyLog.Location = new System.Drawing.Point(200, 369);
+            this.facultyLog.Name = "facultyLog";
+            this.facultyLog.Size = new System.Drawing.Size(115, 47);
+            this.facultyLog.TabIndex = 5;
+            this.facultyLog.Text = "Login Faculty";
+            this.facultyLog.UseVisualStyleBackColor = false;
+            this.facultyLog.Click += new System.EventHandler(this.facultyLog_Click);
             // 
             // login
             // 
@@ -144,9 +161,9 @@ namespace StudentEVL
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(87, 87);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(222, 42);
+            this.label6.Size = new System.Drawing.Size(211, 42);
             this.label6.TabIndex = 0;
-            this.label6.Text = "Login Here,";
+            this.label6.Text = "Login Here";
             // 
             // label2
             // 
@@ -192,23 +209,6 @@ namespace StudentEVL
             this.label5.Size = new System.Drawing.Size(152, 25);
             this.label5.TabIndex = 0;
             this.label5.Text = "Develop By =>";
-            // 
-            // facultyLog
-            // 
-            this.facultyLog.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.facultyLog.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.facultyLog.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.facultyLog.FlatAppearance.BorderSize = 0;
-            this.facultyLog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.facultyLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.facultyLog.ForeColor = System.Drawing.Color.GhostWhite;
-            this.facultyLog.Location = new System.Drawing.Point(200, 369);
-            this.facultyLog.Name = "facultyLog";
-            this.facultyLog.Size = new System.Drawing.Size(115, 47);
-            this.facultyLog.TabIndex = 5;
-            this.facultyLog.Text = "Login Faculty";
-            this.facultyLog.UseVisualStyleBackColor = false;
-            this.facultyLog.Click += new System.EventHandler(this.facultyLog_Click);
             // 
             // LoginForm
             // 
