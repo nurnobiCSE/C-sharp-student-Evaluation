@@ -17,6 +17,7 @@ namespace StudentEVL
         {
             InitializeComponent();
             fillCombobox();
+            fillCombobox2();
         }
         SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-9G2BI4L\MSSQLSERVER01;Initial Catalog=studentEVL;Integrated Security=True");
         private void save_Click(object sender, EventArgs e)
@@ -95,6 +96,31 @@ namespace StudentEVL
                 {
                     string dlist = rdr.GetString(0);
                     course.Items.Add(dlist);
+
+                }
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        public void fillCombobox2()
+        {
+            con.Open();
+            string show = "select department from dptTable";
+            SqlCommand cmd = new SqlCommand(show, con);
+
+            SqlDataReader rdr;
+            try
+            {
+
+                rdr = cmd.ExecuteReader();
+
+                while (rdr.Read())
+                {
+                    string dlist = rdr.GetString(0);
+                    department.Items.Add(dlist);
 
                 }
                 con.Close();

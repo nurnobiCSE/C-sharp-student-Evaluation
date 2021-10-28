@@ -78,13 +78,7 @@ namespace StudentEVL
             this.department.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.department.FormattingEnabled = true;
             this.department.Items.AddRange(new object[] {
-            "CSE",
-            "EEE",
-            "TXT",
-            "Civil",
-            "GDP",
-            "ENG",
-            "MAT"});
+            " "});
             this.department.Location = new System.Drawing.Point(119, 262);
             this.department.Name = "department";
             this.department.Size = new System.Drawing.Size(158, 26);
@@ -294,7 +288,7 @@ namespace StudentEVL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 661);
+            this.ClientSize = new System.Drawing.Size(1000, 700);
             this.Controls.Add(this.semester);
             this.Controls.Add(this.department);
             this.Controls.Add(this.pictureBox1);

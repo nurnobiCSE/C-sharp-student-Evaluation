@@ -16,6 +16,32 @@ namespace StudentEVL
         public curriculumnForm()
         {
             InitializeComponent();
+            fillCombobox2();
+        }
+        public void fillCombobox2()
+        {
+            con.Open();
+            string show = "select department from dptTable";
+            SqlCommand cmd = new SqlCommand(show, con);
+
+            SqlDataReader rdr;
+            try
+            {
+
+                rdr = cmd.ExecuteReader();
+
+                while (rdr.Read())
+                {
+                    string dlist = rdr.GetString(0);
+                    department.Items.Add(dlist);
+
+                }
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void label6_Click(object sender, EventArgs e)

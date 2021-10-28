@@ -17,6 +17,7 @@ namespace StudentEVL
         {
             InitializeComponent();
             fillCombobox();
+            fillCombobox2();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -114,6 +115,31 @@ namespace StudentEVL
                 con.Close();
             }
             catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        public void fillCombobox2()
+        {
+            con.Open();
+            string show = "select department from dptTable";
+            SqlCommand cmd = new SqlCommand(show, con);
+
+            SqlDataReader rdr;
+            try
+            {
+
+                rdr = cmd.ExecuteReader();
+
+                while (rdr.Read())
+                {
+                    string dlist = rdr.GetString(0);
+                    department.Items.Add(dlist);
+
+                }
+                con.Close();
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
