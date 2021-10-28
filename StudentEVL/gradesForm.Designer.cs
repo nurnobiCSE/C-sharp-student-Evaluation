@@ -43,15 +43,12 @@ namespace StudentEVL
             this.grdID = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.stdID = new System.Windows.Forms.TextBox();
-            this.createdataGridViewGrading = new System.Windows.Forms.DataGridView();
-            this.label7 = new System.Windows.Forms.Label();
             this.save = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGrading)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.createdataGridViewGrading)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -171,7 +168,7 @@ namespace StudentEVL
             this.dataGridViewGrading.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewGrading.Location = new System.Drawing.Point(279, 183);
             this.dataGridViewGrading.Name = "dataGridViewGrading";
-            this.dataGridViewGrading.Size = new System.Drawing.Size(444, 250);
+            this.dataGridViewGrading.Size = new System.Drawing.Size(449, 250);
             this.dataGridViewGrading.TabIndex = 23;
             this.dataGridViewGrading.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewGrading_CellContentClick);
             // 
@@ -218,27 +215,6 @@ namespace StudentEVL
             this.stdID.ReadOnly = true;
             this.stdID.Size = new System.Drawing.Size(164, 15);
             this.stdID.TabIndex = 1;
-            // 
-            // createdataGridViewGrading
-            // 
-            this.createdataGridViewGrading.BackgroundColor = System.Drawing.Color.SteelBlue;
-            this.createdataGridViewGrading.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.createdataGridViewGrading.Location = new System.Drawing.Point(729, 183);
-            this.createdataGridViewGrading.Name = "createdataGridViewGrading";
-            this.createdataGridViewGrading.Size = new System.Drawing.Size(241, 250);
-            this.createdataGridViewGrading.TabIndex = 23;
-            this.createdataGridViewGrading.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewGrading_CellContentClick);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Purple;
-            this.label7.Location = new System.Drawing.Point(725, 156);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(194, 24);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "List of Created Grades";
             // 
             // save
             // 
@@ -297,7 +273,6 @@ namespace StudentEVL
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.createdataGridViewGrading);
             this.Controls.Add(this.dataGridViewGrading);
             this.Controls.Add(this.save);
             this.Controls.Add(this.clear);
@@ -307,7 +282,6 @@ namespace StudentEVL
             this.Controls.Add(this.label5);
             this.Controls.Add(this.refresh);
             this.Controls.Add(this.search);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.stdID);
             this.Controls.Add(this.grdID);
@@ -323,7 +297,6 @@ namespace StudentEVL
             this.Load += new System.EventHandler(this.gradesForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGrading)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.createdataGridViewGrading)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -345,8 +318,6 @@ namespace StudentEVL
         private System.Windows.Forms.TextBox grdID;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox stdID;
-        private System.Windows.Forms.DataGridView createdataGridViewGrading;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button save;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label8;

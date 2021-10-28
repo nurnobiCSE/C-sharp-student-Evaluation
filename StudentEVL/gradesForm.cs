@@ -70,17 +70,7 @@ namespace StudentEVL
             dataGridViewGrading.DataSource = ds.Tables[0];
             con.Close();
         }
-        private void populategrade()
-        {
-            con.Open();
-            string query = "select * from grdTable";
-            SqlDataAdapter sda = new SqlDataAdapter(query, con);
-            SqlCommandBuilder builder = new SqlCommandBuilder();
-            var ds = new DataSet();
-            sda.Fill(ds);
-            createdataGridViewGrading.DataSource = ds.Tables[0];
-            con.Close();
-        }
+         
 
         private void dataGridViewGrading_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -90,7 +80,7 @@ namespace StudentEVL
         private void gradesForm_Load(object sender, EventArgs e)
         {
             populate();
-            populategrade();
+             
         }
 
         private void clear_Click(object sender, EventArgs e)
