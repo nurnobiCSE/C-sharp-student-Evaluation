@@ -247,11 +247,11 @@ namespace StudentEVL
             this.edit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.edit.ForeColor = System.Drawing.Color.PapayaWhip;
-            this.edit.Location = new System.Drawing.Point(106, 417);
+            this.edit.Location = new System.Drawing.Point(98, 417);
             this.edit.Name = "edit";
-            this.edit.Size = new System.Drawing.Size(75, 35);
+            this.edit.Size = new System.Drawing.Size(91, 35);
             this.edit.TabIndex = 16;
-            this.edit.Text = "Edit";
+            this.edit.Text = "Update";
             this.edit.UseVisualStyleBackColor = false;
             this.edit.Click += new System.EventHandler(this.edit_Click);
             // 
@@ -261,7 +261,7 @@ namespace StudentEVL
             this.delete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.delete.ForeColor = System.Drawing.Color.Crimson;
-            this.delete.Location = new System.Drawing.Point(188, 417);
+            this.delete.Location = new System.Drawing.Point(189, 417);
             this.delete.Name = "delete";
             this.delete.Size = new System.Drawing.Size(81, 35);
             this.delete.TabIndex = 16;

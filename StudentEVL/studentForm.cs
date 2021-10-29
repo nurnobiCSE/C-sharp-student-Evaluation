@@ -159,6 +159,7 @@ namespace StudentEVL
             address.Text = dataGridViewInsert.CurrentRow.Cells[3].Value.ToString();
             gender.Text = dataGridViewInsert.CurrentRow.Cells[4].Value.ToString();
             department.Text = dataGridViewInsert.CurrentRow.Cells[5].Value.ToString();
+            course.Text = dataGridViewInsert.CurrentRow.Cells[7].Value.ToString();
         }
 
         private void edit_Click(object sender, EventArgs e)

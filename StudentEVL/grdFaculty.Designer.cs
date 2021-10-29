@@ -31,19 +31,16 @@ namespace StudentEVL
         {
             this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.dataGridViewGrading = new System.Windows.Forms.DataGridView();
             this.save = new System.Windows.Forms.Button();
             this.clear = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.grades = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.refresh = new System.Windows.Forms.Button();
             this.search = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.stdID = new System.Windows.Forms.TextBox();
-            this.grdID = new System.Windows.Forms.TextBox();
             this.searchbar = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -56,7 +53,7 @@ namespace StudentEVL
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Crimson;
-            this.label4.Location = new System.Drawing.Point(8, 384);
+            this.label4.Location = new System.Drawing.Point(11, 321);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(242, 54);
             this.label4.TabIndex = 46;
@@ -68,27 +65,17 @@ namespace StudentEVL
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Crimson;
-            this.label8.Location = new System.Drawing.Point(45, 231);
+            this.label8.Location = new System.Drawing.Point(44, 291);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(38, 16);
+            this.label8.Size = new System.Drawing.Size(92, 16);
             this.label8.TabIndex = 45;
-            this.label8.Text = "id is :";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button1.Location = new System.Drawing.Point(67, 305);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 29);
-            this.button1.TabIndex = 44;
-            this.button1.Text = "grade add";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.label8.Text = "operand id is :";
             // 
             // dataGridViewGrading
             // 
+            this.dataGridViewGrading.AllowUserToAddRows = false;
+            this.dataGridViewGrading.AllowUserToDeleteRows = false;
+            this.dataGridViewGrading.AllowUserToOrderColumns = true;
             this.dataGridViewGrading.BackgroundColor = System.Drawing.Color.SteelBlue;
             this.dataGridViewGrading.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewGrading.Location = new System.Drawing.Point(276, 194);
@@ -102,7 +89,7 @@ namespace StudentEVL
             this.save.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.save.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.save.ForeColor = System.Drawing.Color.Goldenrod;
-            this.save.Location = new System.Drawing.Point(172, 305);
+            this.save.Location = new System.Drawing.Point(175, 242);
             this.save.Name = "save";
             this.save.Size = new System.Drawing.Size(95, 29);
             this.save.TabIndex = 41;
@@ -113,13 +100,13 @@ namespace StudentEVL
             // clear
             // 
             this.clear.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clear.ForeColor = System.Drawing.Color.Crimson;
-            this.clear.Location = new System.Drawing.Point(19, 305);
+            this.clear.Location = new System.Drawing.Point(95, 242);
             this.clear.Name = "clear";
-            this.clear.Size = new System.Drawing.Size(42, 29);
+            this.clear.Size = new System.Drawing.Size(74, 29);
             this.clear.TabIndex = 40;
-            this.clear.Text = "X";
+            this.clear.Text = "Clear";
             this.clear.UseVisualStyleBackColor = false;
             this.clear.Click += new System.EventHandler(this.clear_Click);
             // 
@@ -150,28 +137,17 @@ namespace StudentEVL
             "C",
             "D",
             "F"});
-            this.grades.Location = new System.Drawing.Point(92, 257);
+            this.grades.Location = new System.Drawing.Point(95, 194);
             this.grades.Name = "grades";
             this.grades.Size = new System.Drawing.Size(164, 28);
             this.grades.TabIndex = 38;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Purple;
-            this.label6.Location = new System.Drawing.Point(18, 194);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 24);
-            this.label6.TabIndex = 35;
-            this.label6.Text = "GradID";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Purple;
-            this.label5.Location = new System.Drawing.Point(15, 257);
+            this.label5.Location = new System.Drawing.Point(18, 194);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(77, 24);
             this.label5.TabIndex = 34;
@@ -219,20 +195,12 @@ namespace StudentEVL
             this.stdID.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.stdID.Cursor = System.Windows.Forms.Cursors.No;
             this.stdID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stdID.ForeColor = System.Drawing.Color.Crimson;
-            this.stdID.Location = new System.Drawing.Point(92, 229);
+            this.stdID.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.stdID.Location = new System.Drawing.Point(142, 292);
             this.stdID.Name = "stdID";
             this.stdID.ReadOnly = true;
-            this.stdID.Size = new System.Drawing.Size(164, 15);
+            this.stdID.Size = new System.Drawing.Size(128, 15);
             this.stdID.TabIndex = 31;
-            // 
-            // grdID
-            // 
-            this.grdID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grdID.Location = new System.Drawing.Point(92, 194);
-            this.grdID.Name = "grdID";
-            this.grdID.Size = new System.Drawing.Size(164, 29);
-            this.grdID.TabIndex = 30;
             // 
             // searchbar
             // 
@@ -272,19 +240,16 @@ namespace StudentEVL
             this.ClientSize = new System.Drawing.Size(1000, 700);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridViewGrading);
             this.Controls.Add(this.save);
             this.Controls.Add(this.clear);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.grades);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.refresh);
             this.Controls.Add(this.search);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.stdID);
-            this.Controls.Add(this.grdID);
             this.Controls.Add(this.searchbar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -306,19 +271,16 @@ namespace StudentEVL
 
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridViewGrading;
         private System.Windows.Forms.Button save;
         private System.Windows.Forms.Button clear;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ComboBox grades;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button refresh;
         private System.Windows.Forms.Button search;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox stdID;
-        private System.Windows.Forms.TextBox grdID;
         private System.Windows.Forms.TextBox searchbar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

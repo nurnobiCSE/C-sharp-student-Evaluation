@@ -20,4 +20,7 @@ C:\storage\BUBT\SDP\StudentEVL\obj\Debug\StudentEVL.dptFaculty.resources
 C:\storage\BUBT\SDP\StudentEVL\obj\Debug\StudentEVL.grdFaculty.resources
 C:\storage\BUBT\SDP\StudentEVL\obj\Debug\StudentEVL.preFacultyForm.resources
 C:\storage\BUBT\SDP\StudentEVL\obj\Debug\StudentEVL.stdFaculty.resources
-C:\storage\BUBT\SDP\StudentEVL\obj\Debug\StudentEVL.csproj.AssemblyReference.cache
+C:\storage\BUBT\SDP\StudentEVL\bin\Debug\BouncyCastle.Crypto.dll
+C:\storage\BUBT\SDP\StudentEVL\bin\Debug\itextsharp.dll
+C:\storage\BUBT\SDP\StudentEVL\bin\Debug\itextsharp.xml
+C:\storage\BUBT\SDP\StudentEVL\obj\Debug\StudentEVL.csproj.CopyComplete

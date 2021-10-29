@@ -1,9 +1,13 @@
 ﻿using System;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -86,38 +90,12 @@ namespace StudentEVL
         private void clear_Click(object sender, EventArgs e)
         {
             searchbar.Text = "";
-            grdID.Text = "";
+            //grdID.Text = "";
             grades.Text = "";
             //course.Text = "";
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if (grades.Text == "" || grdID.Text == "")
-            {
-                MessageBox.Show("Please check your missing information");
-            }
-            else
-            {
-                try
-                {
-
-                    con.Open();
-                    string query = "insert into grdTable values('" + grdID.Text + "','" + grades.Text + "')";
-                    SqlCommand cmd = new SqlCommand(query, con);
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Data insert Successful!");
-                    grades.Text = "";
-                    grdID.Text = "";
-                    con.Close();
-
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            }
-        }
+        
 
         private void refresh_Click(object sender, EventArgs e)
         {
@@ -126,7 +104,7 @@ namespace StudentEVL
             stdID.Text = "";
             //course.Text = "";
             grades.Text = "";
-            grdID.Text = "";
+            //grdID.Text = "";
         }
 
         private void search_Click(object sender, EventArgs e)
@@ -140,5 +118,7 @@ namespace StudentEVL
             dataGridViewGrading.DataSource = ds.Tables[0];
             con.Close();
         }
+
+        
     }
 }
